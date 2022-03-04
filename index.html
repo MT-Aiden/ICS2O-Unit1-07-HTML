@@ -3,12 +3,12 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="My first webpage, with MDL">
+    <meta name="description" content="My first webpage with Javascript">
     <meta name="keywords" content="mths, ics2o">
     <meta name="author" content="Aiden McLeod">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-light_green.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -18,6 +18,12 @@
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+      function myButtonClicked() {
+        alert("Hello, World!)
+        } 
+      function
+    </script>
     <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class = "mdl-layout__header">
         <div class = "mdl-layout__header-row">      
@@ -26,21 +32,10 @@
       </header>
       <main class = "mdl-layout__content">
         <div class = "page-content" style = "padding-left:100px;">Enter the length of a square.</div>
-        <!-- Simple Textfield for integers-->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="demo-input" />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input">Length of square (mm)</label>
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number</span>
-          </div>
-        </form>
-        <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-          Calculate area
-        </button>
+      <!-- Colored FAB button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="myButtonClicked()">
+      <i class="material-icons">add</i>
+      </button>
         <p>
           <a href="./index2.html">My index2.html page</a>
         </p>
