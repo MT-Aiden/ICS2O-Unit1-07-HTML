@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<!-- Aiden ICS2O-Unit1-07-HTML -->
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="My first webpage, with a JavaScript">
-    <meta name="keywords" content="mths, ics2o">
-    <meta name="author" content="Aiden Mcleod">
+    <meta name="description" content="Test site for ICS2O">
+    <meta name="keywords" content="mths, ICS2O">
+    <meta name="author" content="Aiden McLeod">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.blue_grey-lime.min.css"
-    /> 
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>My first webpage, with a JS file</title>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Website Index 2</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="./js/script.js"></script>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Hello, World! with JS</span>
-        </div>
-      </header>
     <script>
-      function button1() {
-        alert("Hello, Wordl!")
+      function onButtonClick() {
+        alert("Hello, World!")
       }
-      function button2() {
-        alert("Style is still important!")
+
+      function onButton2Click() {
+        alert("Bye, World!")
       }
     </script>
-    <p>Proper HTML style is important</p>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">My Website</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="./">Index</a>
+          </nav>
+        </div>
+      </header>
+    </div>
     <br>
-    <button onclick="button1()">Hello, World!</button>
-    <br>
-    <button onclick="button2()">CSS</button>
+    <h1>Welcome to my Index 2!</h1>
+    <!-- Accent-colored raised button with ripple -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="onButtonClick()">
+      Hello
+    </button>
+    <!-- Accent-colored raised button with ripple -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="onButton2Click()">
+      Hello again!
+    </button>
   </body>
 </html>
